@@ -71,7 +71,7 @@
                     <ul class="left light">
                         <li><h5>Web Development</h5></li>
                             <div class="progress">
-                                <div class="determinate blue lighten-2" style="width: 75%"></div>
+                                <div class="determinate blue lighten-2" style="width: 80%"></div>
                             </div>
                         <li><h5>Editor Photo</h5></li>
                             <div class="progress">
@@ -79,15 +79,15 @@
                             </div>
                         <li><h5>Mobile App Development</h5></li>
                             <div class="progress">
-                                <div class="determinate blue lighten-2" style="width: 70%"></div>
+                                <div class="determinate blue lighten-2" style="width: 75%"></div>
                             </div>
                         <li><h5>Editor Video</h5></li>
                             <div class="progress">
-                                <div class="determinate blue lighten-2" style="width: 80%"></div>
+                                <div class="determinate blue lighten-2" style="width: 70%"></div>
                             </div>
                         <li><h5>Game Development</h5></li>
                             <div class="progress">
-                                <div class="determinate blue lighten-2" style="width: 95%"></div>
+                                <div class="determinate blue lighten-2" style="width: 85%"></div>
                             </div>
                         <li><h5>Writing</h5></li>
                             <div class="progress">
@@ -96,6 +96,53 @@
                     </ul>
               </div>
             </div>
+        </div>
+    </section>
+
+    <!-- service -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="image/parallax.jpg"></div>
+
+        <div class="container service">
+            <h2 class="center white-text">Our Service</h2>
+        </div>
+        <section id="service" class="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col m3 s6">
+                        <div class="card-panel center">
+                            <i class="material-icons medium">desktop_windows</i>
+                            <h5>Web Dev</h5>
+                        </div>
+                    </div>
+                    <div class="col m3 s6">
+                        <div class="card-panel center">
+                            <i class="material-icons medium">wallpaper</i>
+                            <h5>Editor Photo</h5>
+                        </div>
+                    </div>
+                    <div class="col m3 s6">
+                        <div class="card-panel center">
+                            <i class="material-icons medium">stay_current_portrait</i>
+                            <h5>Mobile App</h5>
+                        </div>
+                    </div>
+                    <div class="col m3 s6">
+                        <div class="card-panel center">
+                            <i class="material-icons medium">games</i>
+                            <h5>Game Dev</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+    <!-- gallery -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="center grey-text text-darken-4">Gallery</h2>
         </div>
     </section>
 
@@ -116,7 +163,8 @@
             interval: 4000
         });
 
-
+        const parallax = document.querySelectorAll ('.parallax');
+        M.Parallax.init(parallax);
     </script>
 
   </body>
